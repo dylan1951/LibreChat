@@ -13,6 +13,7 @@ import {
   LightningIcon,
   BedrockIcon,
   Sparkles,
+  NanoGPTIcon,
 } from '~/components/svg';
 import UnknownIcon from './UnknownIcon';
 import { cn } from '~/utils';
@@ -74,5 +75,6 @@ export const icons = {
   [EModelEndpoint.azureAssistants]: AssistantAvatar,
   [EModelEndpoint.agents]: AgentAvatar,
   [EModelEndpoint.bedrock]: Bedrock,
+  [EModelEndpoint.nanoGpt]: NanoGPTIcon,
   unknown: UnknownIcon,
 };

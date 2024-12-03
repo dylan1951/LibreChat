@@ -36,6 +36,7 @@ type EndpointSchema =
 const endpointSchemas: Record<EModelEndpoint, EndpointSchema> = {
   [EModelEndpoint.openAI]: openAISchema,
   [EModelEndpoint.azureOpenAI]: openAISchema,
+  [EModelEndpoint.nanoGpt]: openAISchema,
   [EModelEndpoint.custom]: openAISchema,
   [EModelEndpoint.google]: googleSchema,
   [EModelEndpoint.bingAI]: bingAISchema,
@@ -66,6 +67,7 @@ export function getEnabledEndpoints() {
     EModelEndpoint.gptPlugins,
     EModelEndpoint.anthropic,
     EModelEndpoint.bedrock,
+    EModelEndpoint.nanoGpt,
   ];
 
   const endpointsEnv = process.env.ENDPOINTS ?? '';
@@ -318,6 +320,7 @@ type CompactEndpointSchema =
 const compactEndpointSchemas: Record<string, CompactEndpointSchema> = {
   [EModelEndpoint.openAI]: openAISchema,
   [EModelEndpoint.azureOpenAI]: openAISchema,
+  [EModelEndpoint.nanoGpt]: openAISchema,
   [EModelEndpoint.custom]: openAISchema,
   [EModelEndpoint.assistants]: compactAssistantSchema,
   [EModelEndpoint.azureAssistants]: compactAssistantSchema,

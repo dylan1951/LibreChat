@@ -33,6 +33,7 @@ export default function useGenerationsByLatest({
       EModelEndpoint.anthropic,
       EModelEndpoint.gptPlugins,
       EModelEndpoint.azureOpenAI,
+      EModelEndpoint.nanoGpt,
     ].find((e) => e === endpoint),
   );
 

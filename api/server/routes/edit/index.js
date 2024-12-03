@@ -38,7 +38,7 @@ if (isEnabled(LIMIT_MESSAGE_USER)) {
 
 router.use(validateConvoAccess);
 
-router.use([`/${EModelEndpoint.azureOpenAI}`, `/${EModelEndpoint.openAI}`], openAI);
+router.use([`/${EModelEndpoint.azureOpenAI}`, `/${EModelEndpoint.openAI}`, `/${EModelEndpoint.nanoGpt}`], openAI);
 router.use(`/${EModelEndpoint.gptPlugins}`, gptPlugins);
 router.use(`/${EModelEndpoint.anthropic}`, anthropic);
 router.use(`/${EModelEndpoint.google}`, google);

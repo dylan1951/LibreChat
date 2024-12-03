@@ -521,6 +521,7 @@ const bedrockGeneralCol2: SettingsConfiguration = [
 export const settings: Record<string, SettingsConfiguration | undefined> = {
   [EModelEndpoint.openAI]: openAI,
   [EModelEndpoint.azureOpenAI]: openAI,
+  [EModelEndpoint.nanoGpt]: openAI,
   [EModelEndpoint.custom]: openAI,
   [EModelEndpoint.anthropic]: anthropicConfig,
   [`${EModelEndpoint.bedrock}-${BedrockProviders.Anthropic}`]: bedrockAnthropic,
@@ -551,6 +552,7 @@ export const presetSettings: Record<
 > = {
   [EModelEndpoint.openAI]: openAIColumns,
   [EModelEndpoint.azureOpenAI]: openAIColumns,
+  [EModelEndpoint.nanoGpt]: openAIColumns,
   [EModelEndpoint.custom]: openAIColumns,
   [EModelEndpoint.anthropic]: {
     col1: anthropicCol1,

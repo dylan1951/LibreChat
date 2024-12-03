@@ -20,6 +20,7 @@ async function loadDefaultModels(req) {
   const anthropic = getAnthropicModels();
   const chatGPTBrowser = getChatGPTBrowserModels();
   const azureOpenAI = await getOpenAIModels({ user: req.user.id, azure: true });
+  const nanoGpt = await getOpenAIModels( {user: req.user.id, azure: false } );
   const gptPlugins = await getOpenAIModels({
     user: req.user.id,
     azure: useAzurePlugins,
@@ -35,6 +36,7 @@ async function loadDefaultModels(req) {
     [EModelEndpoint.anthropic]: anthropic,
     [EModelEndpoint.gptPlugins]: gptPlugins,
     [EModelEndpoint.azureOpenAI]: azureOpenAI,
+    [EModelEndpoint.nanoGpt]: nanoGpt,
     [EModelEndpoint.bingAI]: ['BingAI', 'Sydney'],
     [EModelEndpoint.chatGPTBrowser]: chatGPTBrowser,
     [EModelEndpoint.assistants]: assistants,

@@ -42,6 +42,7 @@ const { logger } = require('~/config');
 const providerParsers = {
   [EModelEndpoint.openAI]: openAISchema,
   [EModelEndpoint.azureOpenAI]: openAISchema,
+  [EModelEndpoint.nanoGpt]: openAISchema,
   [EModelEndpoint.anthropic]: anthropicSchema,
   [EModelEndpoint.bedrock]: bedrockOutputParser,
 };

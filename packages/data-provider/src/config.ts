@@ -570,6 +570,7 @@ export const defaultEndpoints: EModelEndpoint[] = [
   EModelEndpoint.anthropic,
   EModelEndpoint.custom,
   EModelEndpoint.bedrock,
+  EModelEndpoint.nanoGpt,
 ];
 
 export const alternateName = {
@@ -585,6 +586,7 @@ export const alternateName = {
   [EModelEndpoint.anthropic]: 'Anthropic',
   [EModelEndpoint.custom]: 'Custom',
   [EModelEndpoint.bedrock]: 'AWS Bedrock',
+  [EModelEndpoint.nanoGpt]: 'NanoGPT',
   [KnownEndpoints.ollama]: 'Ollama',
   [KnownEndpoints.xai]: 'xAI',
 };
@@ -717,6 +719,7 @@ export const EndpointURLs: { [key in EModelEndpoint]: string } = {
   [EModelEndpoint.gptPlugins]: `/api/ask/${EModelEndpoint.gptPlugins}`,
   [EModelEndpoint.azureOpenAI]: `/api/ask/${EModelEndpoint.azureOpenAI}`,
   [EModelEndpoint.chatGPTBrowser]: `/api/ask/${EModelEndpoint.chatGPTBrowser}`,
+  [EModelEndpoint.nanoGpt]: `/api/ask/${EModelEndpoint.nanoGpt}`,
   [EModelEndpoint.azureAssistants]: '/api/assistants/v1/chat',
   [EModelEndpoint.assistants]: '/api/assistants/v2/chat',
   [EModelEndpoint.agents]: `/api/${EModelEndpoint.agents}/chat`,

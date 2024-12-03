@@ -12,6 +12,7 @@ import CustomConfig from './CustomEndpoint';
 import GoogleConfig from './GoogleConfig';
 import OpenAIConfig from './OpenAIConfig';
 import OtherConfig from './OtherConfig';
+import NanoGPTConfig from './NanoGPTConfig';
 import HelpText from './HelpText';
 
 const endpointComponents = {
@@ -19,6 +20,7 @@ const endpointComponents = {
   [EModelEndpoint.openAI]: OpenAIConfig,
   [EModelEndpoint.custom]: CustomConfig,
   [EModelEndpoint.azureOpenAI]: OpenAIConfig,
+  [EModelEndpoint.nanoGpt]: NanoGPTConfig,
   [EModelEndpoint.gptPlugins]: OpenAIConfig,
   [EModelEndpoint.assistants]: OpenAIConfig,
   [EModelEndpoint.azureAssistants]: OpenAIConfig,
@@ -29,6 +31,7 @@ const formSet: Set<string> = new Set([
   EModelEndpoint.openAI,
   EModelEndpoint.custom,
   EModelEndpoint.azureOpenAI,
+  EModelEndpoint.nanoGpt,
   EModelEndpoint.gptPlugins,
   EModelEndpoint.assistants,
   EModelEndpoint.azureAssistants,

@@ -22,6 +22,7 @@ const initializeClient = async ({
     PROXY,
     OPENAI_API_KEY,
     AZURE_API_KEY,
+    NANO_GPT_API_KEY,
     OPENAI_REVERSE_PROXY,
     AZURE_OPENAI_BASEURL,
     OPENAI_SUMMARIZE,
@@ -35,6 +36,7 @@ const initializeClient = async ({
   const credentials = {
     [EModelEndpoint.openAI]: OPENAI_API_KEY,
     [EModelEndpoint.azureOpenAI]: AZURE_API_KEY,
+    [EModelEndpoint.nanoGpt]: NANO_GPT_API_KEY,
   };
 
   const baseURLOptions = {

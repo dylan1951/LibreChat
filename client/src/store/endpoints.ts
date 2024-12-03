@@ -13,6 +13,7 @@ const defaultConfig: TEndpointsConfig = {
   [EModelEndpoint.gptPlugins]: null,
   [EModelEndpoint.google]: null,
   [EModelEndpoint.anthropic]: null,
+  [EModelEndpoint.nanoGpt]: null,
   [EModelEndpoint.custom]: null,
 };
 

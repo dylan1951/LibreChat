@@ -26,6 +26,7 @@ export enum EModelEndpoint {
   agents = 'agents',
   custom = 'custom',
   bedrock = 'bedrock',
+  nanoGpt = 'nanoGpt',
 }
 
 export const paramEndpoints = new Set<EModelEndpoint | string>([

@@ -15,6 +15,7 @@ const settings: { [key: string]: FC<TModelSelectProps> } = {
   [EModelEndpoint.openAI]: OpenAISettings,
   [EModelEndpoint.custom]: OpenAISettings,
   [EModelEndpoint.azureOpenAI]: OpenAISettings,
+  [EModelEndpoint.nanoGpt]: OpenAISettings,
   [EModelEndpoint.bingAI]: BingAISettings,
   [EModelEndpoint.anthropic]: AnthropicSettings,
   [EModelEndpoint.bedrock]: BedrockSettings,
