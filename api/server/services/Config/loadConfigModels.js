@@ -72,7 +72,7 @@ async function loadConfigModels(req) {
 
     modelsConfig[name] = [];
 
-    if (models.fetch && !isUserProvided(API_KEY) && !isUserProvided(BASE_URL)) {
+    if (!models.default || (models.fetch && !isUserProvided(API_KEY) && !isUserProvided(BASE_URL))) {
       fetchPromisesMap[uniqueKey] =
         fetchPromisesMap[uniqueKey] ||
         fetchModels({

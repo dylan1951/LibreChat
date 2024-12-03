@@ -252,7 +252,7 @@ export const endpointSchema = baseEndpointSchema.merge(
     apiKey: z.string(),
     baseURL: z.string(),
     models: z.object({
-      default: z.array(z.string()).min(1),
+      default: z.array(z.string()).optional(),
       fetch: z.boolean().optional(),
       userIdQuery: z.boolean().optional(),
     }),
